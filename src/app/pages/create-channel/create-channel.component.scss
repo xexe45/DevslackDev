@@ -1,0 +1,29 @@
+$principal: #4F5055;
+
+.crear {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+
+  .crear-header {
+    .title {
+      color: $principal;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .description {
+      color: #A2A2A2;
+      font-size: 16px;
+    }
+
+    .formulario {
+      label {
+        color: $principal;
+        font-weight: bold;
+      }
+    }
+  }
+}

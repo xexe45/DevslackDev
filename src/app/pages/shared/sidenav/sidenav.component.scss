@@ -1,0 +1,103 @@
+$status_color : #969493;
+$status_icon: #84C580;
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303E4D;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+
+
+
+  .user {
+
+
+    .user_name {
+      font-size: 16px;
+    }
+
+    .status {
+      color: $status_color;
+      font-size: 12px;
+
+      .icono {
+        color: $status_icon;
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 20px;
+
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+
+    .content-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $status_color;
+    }
+
+    i {
+      cursor: pointer;
+    }
+
+
+  }
+
+  .content-list {
+
+    height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    .list {
+      list-style: none;
+      padding: 0 !important;
+      margin: 0 !important;
+
+      .item-list {
+        margin-top: 10px;
+
+        a {
+          color: $status_color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .paginator {
+    text-align: center;
+
+    i {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+}

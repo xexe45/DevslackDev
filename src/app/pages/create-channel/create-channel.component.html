@@ -1,0 +1,27 @@
+<div class="row crear animated fadeIn">
+  <div class="col-md-8 crear-header">
+    <h3 class="title">Crear un canal</h3>
+    <p class="description">
+      Los canales es por donde los miembros se comunican. Todo es mucho mejor cuando estan organizados - #leads,
+      por ejemplo. </p>
+    <div class="formulario">
+      <form autocomplete="off" (ngSubmit)="create(forma)" #forma="ngForm">
+        <div class="form-group">
+          <label for="">Nombre</label>
+          <input #name="ngModel" [(ngModel)]="room.name" minlength="2" name="name" required type="text"
+            class="form-control" placeholder="Mi nuevo grupo" [class.is-invalid]="name.invalid && name.touched">
+        </div>
+        <div class="form-group">
+          <label for="">Descripcion (opcional)</label>
+          <input minlength="2" name="description" #description="ngModel" [(ngModel)]="room.description" type="text"
+            class="form-control" placeholder="Descripcion de tu nuevo grupo"
+            [class.is-invalid]="description.invalid && description.touched">
+        </div>
+        <div class="form-group float-right">
+          <button (click)="cancelar()" type="button" class="btn btn-dark mr-2">Cancelar</button>
+          <button type="submit" class="btn btn-success">Crear Canal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

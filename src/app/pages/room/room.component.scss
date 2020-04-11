@@ -1,0 +1,98 @@
+$principal: #4F5055;
+
+.header-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $principal;
+
+  .room-title,
+  .total {
+
+    font-weight: bold;
+  }
+
+}
+
+.chat-room {
+
+  height: 82%;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  .day {
+    margin-top: 20px;
+
+    .fecha {
+      margin-top: 20px;
+      color: $principal;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .message {
+      display: flex;
+      margin-top: 20px;
+
+      .photo {
+        width: 50px;
+        border-radius: 10px;
+      }
+
+      .user_connected {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .head {
+
+
+          .user {
+            color: $principal;
+            font-weight: bold;
+            margin-right: 10px;
+          }
+
+          .time {
+            color: #CCCBCA;
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+
+        .texto {
+          .text-message {
+            color: $principal;
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

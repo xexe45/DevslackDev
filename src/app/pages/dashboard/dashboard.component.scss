@@ -1,0 +1,34 @@
+$principal: #4F5055;
+$fondo : #eaeaea;
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .texto {
+    .texto_bienvenida {
+      color: $principal;
+    }
+  }
+
+  .logo {
+    padding: 40px;
+    background: $fondo;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .rooms {
+    margin-top: 20px;
+    text-align: center;
+
+    .texto_rooms {
+      color: $principal;
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}

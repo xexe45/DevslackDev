@@ -1,0 +1,29 @@
+<div class="header">
+
+  <div class="user">
+    <h3 class="user_name">{{ auth.usuario.nombre }}</h3>
+    <small class="status"><span class="icono"><i class="fa fa-circle"></i></span> Online</small>
+  </div>
+</div>
+<div class="content">
+  <div class="content-header">
+    <h3 class="content-title">Canales</h3>
+    <i matTooltip="Agregar Canal" (click)="newChannel()" class="fa fa-plus-circle" aria-hidden="true"></i>
+  </div>
+  <div class="content-list">
+
+    <ul class="list">
+      <li class="item-list" *ngIf="loading">
+        <a><small><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> cargando canales...</small></a>
+      </li>
+      <li class="item-list" *ngFor="let room of chatService.rooms">
+        <a [routerLink]="['/home', 'rooms', room.slug]"># {{ room.name }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="paginator">
+
+    <i (click)="salir()" matTooltip="Cerrar Sesion" class="fa fa-power-off" aria-hidden="true"></i>
+
+  </div>
+</div>
